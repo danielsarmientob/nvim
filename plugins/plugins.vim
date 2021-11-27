@@ -8,4 +8,12 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'https://github.com/vim-airline/vim-airline'
 
+" typing
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
+
+" snipers
+Plug 'sirver/ultisnips'
+
 call plug#end()
