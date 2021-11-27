@@ -14,6 +14,6 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
 " snipers
-Plug 'sirver/ultisnips'
-
+"Plug 'sirver/ultisnips'
+"Plug 'honza/vim-snippets'
 call plug#end()

@@ -1,6 +1,6 @@
-syntax on
+syntax enable
 set number
-set mouse=v
+"set mouse=a
 set clipboard=unnamed
 set showcmd
 set ruler
@@ -10,6 +10,12 @@ set sw=2
 set relativenumber
 set laststatus=2
 set noshowmode
+set hidden
+set updatetime=300
+set autoindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
 "set backspace=2
 "set guioptions-=T
 "set guioptions-=L
@@ -36,3 +42,5 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+
