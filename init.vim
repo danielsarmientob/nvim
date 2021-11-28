@@ -21,6 +21,7 @@ set tabstop=4
 "set guioptions-=L
  
 let mapleader=" "
+set pastetoggle=<F2>
 
 imap jk <ESC>
 imap JK <ESC>
@@ -28,19 +29,25 @@ imap JK <ESC>
 source $HOME/.config/nvim/plugins/plugins.vim
 source $HOME/.config/nvim/plugins/plug-config.vim
 
+" Pegar texto externo
+map <leader>p :set paste!<cr>
+map <leader>np :set nopaste!<cr>
+
 "nmap -> el atajo solo funciona en modo normal
 nmap <leader>w  :w <CR>
 nmap <leader>W  :w <CR>
 nmap <leader>q  :q <CR>
 nmap <leader>Q  :q <CR>
-" nmap <leader>qq :q!<CR> 
 nmap <leader>s   <Plug>(easymotion-s2)
 nmap <leader>nt  :NERDTreeFind<CR>
 
-" COC
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+"mueve bloques de codigo en modo visual o V-Line
+"Moves Blocks of code in visual mode or V-Line xnoremap K :move '<-2<CR>gv-gv xnoremap J :move '>+1<CR>gv-gv 
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv 
 
+" Better indenting
+" Mejor Indentación
+vnoremap < <gv
+vnoremap > >gv
 

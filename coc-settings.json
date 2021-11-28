@@ -1,0 +1,4 @@
+{
+    "snippets.priority": 1,
+    "snippets.userSnippetsDirectory": "~/.config/nvim/snippets"
+}
