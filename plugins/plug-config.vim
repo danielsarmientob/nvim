@@ -4,9 +4,26 @@ let g:gruvbox_contrast_dark="hard"
 
 "NERDTREE
 let NERDTreeQuitOnOpen=1
+nmap <leader>nt  :NERDTreeFind<CR>
 
 "COBOL
 "let g:cobol_colorcolumns=1
+
+" FZF
+nmap <leader>fs :FZF<CR>
+nmap <leader>rg :Rg<CR>
+
+" SplitJoin
+
+nmap sj :SplitjoinJoin<CR>     
+nmap sk :SplitjoinSplit<CR>
+
+" Tcomment
+nmap <Leader>--        :TComment<CR>
+nmap <Leader>-b        :TCommentBlock
+
+" EasyMotion
+nmap <leader>s   <Plug>(easymotion-s2)
 
 " COC
 nmap <silent> gd <Plug>(coc-definition)
@@ -17,10 +34,10 @@ nmap <silent> gr <Plug>(coc-references)
 " COC SNIPPETS
 
 " Usar <C-j> para saltar al siguiente marcador de posición, es el valor por defecto de coc.nvim
-let g:coc_snippet_next = '<c-j>'
+"let g:coc_snippet_next = '<c-j>'
 
 " Utilice <C-k> para saltar al marcador de posición anterior, es el valor por defecto de coc.nvim
-let g:coc_snippet_prev = '<c-k>'
+"let g:coc_snippet_prev = '<c-k>'
 
 " Hacer que <tab> se utilice para la finalización de disparos, confirmación de finalización, expansión de fragmentos y salto como VSCode.
 
