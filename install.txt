@@ -1,1 +1,16 @@
+- Para buscar string en los archivos
+
 sudo apt-get install  ripgrep
+
+- extensios COC VIM
+
+coc-snippets
+coc-html   
+coc-tsserver 
+coc-pyright 
+coc-json 
+coc-css
+
+- Para cuando se instale coc-snippets
+
+pip install pynvim
